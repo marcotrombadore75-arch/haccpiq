@@ -167,7 +167,7 @@
     if (!data || !Number.isSafeInteger(data.visits) || !Number.isSafeInteger(data.downloads)) return;
     document.getElementById('haccpiq-visits').textContent = format.format(data.visits);
     document.getElementById('haccpiq-downloads').textContent = format.format(data.downloads);
-    document.getElementById('haccpiq-counter-status').textContent = 'Conteggio condiviso · valori iniziali inclusi';
+    document.getElementById('haccpiq-counter-status').textContent = '';
   }
   async function count(kind) {
     try {
