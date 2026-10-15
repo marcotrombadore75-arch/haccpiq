@@ -1,0 +1,35 @@
+/* HaccpIQ: compact counters and mobile-only full-window demo. */
+.demo-mobile-cta{display:none}
+.download-app-mark{width:68px;height:68px;border-radius:18px;background:transparent;overflow:hidden;flex:none}
+.download-app-mark img{display:block;width:100%;height:100%;object-fit:contain}
+/* Put the counters AFTER the legal footer rather than in the marketing area. */
+.haccpiq-counters{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 22px;margin:22px 0 0;padding:13px 0 0;border:0;border-top:1px solid rgba(200,224,204,.18);border-radius:0;background:transparent;color:#aec7b6;text-align:center;font-variant-numeric:tabular-nums}
+.haccpiq-counters>div{display:inline-flex;align-items:baseline;gap:6px;min-width:0}
+.haccpiq-counters strong{font-size:15px;line-height:1.2;font-weight:650;color:#dae8da}
+.haccpiq-counters span{font-size:10px;line-height:1.2;color:#aec7b6}
+.haccpiq-counters small{display:none}
+@media(max-width:720px){
+ /* The framed demo is awkward on a mobile browser: link to the dedicated page. */
+ .demo-section{padding:42px 0;background:linear-gradient(145deg,#10382f,#1c5444)}
+ .demo-section .demo-heading,.demo-section .demo-shell,.demo-section .demo-foot{display:none!important}
+ .demo-mobile-cta{display:block}
+ .demo-mobile-button{min-height:94px;display:flex;align-items:center;justify-content:center;gap:15px;width:100%;padding:17px 18px;text-decoration:none;border:1px solid rgba(241,255,234,.24);border-radius:19px;background:#d8e9c7;color:#123d36;box-shadow:0 14px 28px rgba(3,30,24,.15);font-size:16px;font-weight:750;line-height:1.25;transition:transform .2s ease,background .2s ease}
+ .demo-mobile-button .icon{width:26px;height:26px;flex:none}
+ .demo-mobile-button span:not(.demo-mobile-arrow){flex:1}
+ .demo-mobile-button strong{display:block;font-size:20px;margin-top:3px}
+ .demo-mobile-button .demo-mobile-arrow{font-size:24px;flex:none}
+ .demo-mobile-button:active{transform:scale(.985);background:#edf5e6}
+ .demo-mobile-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+ .download-app-mark{width:72px;height:72px;border-radius:18px}
+ .haccpiq-counters{gap:7px 19px;margin-top:18px;padding-top:14px}
+ .haccpiq-counters strong{font-size:12px}
+ .haccpiq-counters span{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.demo-mobile-button{transition:none}}
+
+/* IQ color across all site wordmarks, titles and body copy; original app-logo green. */
+:root { --haccpiq-iq-green:#B3CD9E; }
+.brand-iq,
+.footer .brand-iq,
+.download-card h3>span.brand-iq,
+.paper-header b>span.brand-iq { color:var(--haccpiq-iq-green); }
